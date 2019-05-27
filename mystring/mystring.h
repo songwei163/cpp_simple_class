@@ -49,6 +49,7 @@ inline mystring::mystring (const mystring& str)
 
 inline mystring& mystring::operator= (const mystring& str)
 {
+  //  不仅仅是效率问题，更是为了检测自我赋值
   if (this == &str)
     return *this;
 

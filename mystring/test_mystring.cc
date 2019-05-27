@@ -8,7 +8,9 @@
 int main ()
 {
   mystring str ("hello");
-  mystring str1 = str;
+  mystring& str1=str;
+  //mystring str1 = str;
+  str1=str;
   cout << str << endl;
   cout << str1 << endl;
   //printf("%s\n",str.get_str ());
