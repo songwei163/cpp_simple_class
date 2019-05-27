@@ -11,6 +11,11 @@
 using namespace std;
 
 class mystring;
+
+//将<<重载为类的非成员函数的原因是
+//  体现cout<<str;
+//  而不是str<<cout;
+//  前者更符合认知习惯
 ostream& operator<< (ostream&, mystring&);
 
 class mystring {
