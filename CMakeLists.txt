@@ -3,4 +3,5 @@ project(cpp_simple_class)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(mycomplex mycomplex/test_mycomplex.cpp mycomplex/mycomplex.h)
+add_executable(mycomplex mycomplex/mycomplex.h mycomplex/test_mycomplex.cpp)
+add_executable(mystring mystring/mystring.h mystring/test_mystring.cc)
